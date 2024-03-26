@@ -1,3 +1,5 @@
+//MAYKON DE SOUZA SANTOS
+
 // p-code.cpp :  cpp.sh
 //
 // C conventions
@@ -218,56 +220,36 @@ int main()
         start MAIN
     */
 
-    code[ 0].f = INT; code[ 0].l = 0; code[ 0].a =  5; // main-INICIO
+    code[ 0].f = INT; code[ 0].l = 0; code[ 0].a =  7; // main-INICIO
     code[ 1].f = LIT; code[ 1].l = 0; code[ 1].a =  5; // n = 5
-    code[ 2].f = STO; code[ 2].l = 0; code[ 2].a =  3; 
-    code[ 3].f = LOD; code[ 3].l = 0; code[ 3].a =  3;
-    code[ 4].f = STO; code[ 4].l = 0; code[ 4].a =  8;
-    code[ 5].f = CAL; code[ 5].l = 0; code[ 5].a =  20;
-    code[6].f = LOD; code[6].l = 0; code[ 6].a = 9;
-    code[ 7].f = STO; code[ 7].l = 0; code[ 7].a =  4;
-    code[ 8].f = OPR; code[ 8].l = 0; code[ 8].a =  0;  
+    code[ 2].f = STO; code[ 2].l = 0; code[ 2].a =  3; // n -> 3
+    code[ 3].f = LIT; code[ 3].l = 0; code[ 3].a =  1; // cont
+    code[ 4].f = STO; code[ 4].l = 0; code[ 4].a =  4; // s[4] = cont
+    code[ 5].f = LIT; code[ 5].l = 0; code[ 5].a =  0 ; // fib 1
+    code[ 6].f = STO; code[ 6].l = 0; code[ 6].a =  5; // 
+    code[ 7].f = LIT; code[ 7].l = 0; code[ 7].a =  1; // fib 2
+    code[ 8].f = STO; code[ 8].l = 0; code[ 8].a =  6;
+    code[ 9].f = LOD; code[ 9].l = 0; code[ 9].a =  3;
+    code[ 10].f = LOD; code[ 10].l = 0; code[ 10].a =  4;
+    code[ 11].f = OPR; code[ 11].l = 0; code[11].a =  10;
+    code[ 12].f = JPC; code[ 12].l = 0; code[12].a =  24;
+    code[13].f = LOD; code[13].l = 0; code[13].a =  5;
+    code[ 14].f = LOD; code[ 14].l = 0; code[ 14].a =  6;
+    code[ 15].f = OPR; code[ 15].l = 0; code[15].a =  2;
+    code[ 16].f = LOD; code[ 16].l = 0; code[ 16].a =  6;
+    code[ 17].f = STO; code[ 17].l = 0; code[ 17].a =  5;
+    code[ 18].f = STO; code[ 18].l = 0; code[ 18].a =  6;
+    code[ 19].f = LOD; code[ 19].l = 0; code[ 19].a =  4;
+    code[ 20].f = LIT; code[ 20].l = 0; code[ 20].a =  1;
+    code[ 21].f = OPR; code[ 21].l = 0; code[ 21].a =  2;
+    code[ 22].f = STO; code[ 22].l = 0; code[22].a =  4;
+    code[ 23].f = JMP; code[ 23].l = 0; code[23].a =  9;
+    code[ 24].f = LOD; code[24].l = 0; code[ 24].a =  5;
+    code[ 25].f =STO; code[25].l = 0; code[25].a = 6;
+    code[ 26].f = STO; code[26].l = 0; code[ 26].a =  5;
+    code[27].f = OPR; code[27].l = 0; code[27].a =  0;
 
-    //main fim
 
-
-
-     
-    code[ 20].f = INT; code[ 20].l = 0; code[ 20].a = 5;
-    code[ 21].f = LIT; code[ 21].l = 0; code[ 21].a = 0;
-    code[ 22].f = STO; code[ 22].l = 0; code[ 22].a = 4;
-    
-    code[ 23].f = LOD; code[ 23].l = 0; code[ 23].a = 3;
-    code[ 24].f = LIT; code[ 24].l = 0; code[ 24].a = 2;
-    code[ 25].f = OPR; code[ 25].l = 0; code[ 25].a = 13;
-    code[ 26].f = JPC; code[ 26].l = 0; code[ 26].a = 46;
-
-    code[ 27].f = LOD; code[ 27].l = 0; code[ 27].a = 3;
-    code[ 28].f = LIT; code[ 28].l = 0; code[ 28].a = 1;
-    code[ 29].f = OPR; code[ 29].l = 0; code[ 29].a = 3;
-    code[30].f = STO; code[ 30].l = 0; code[ 30].a = 8;
-    code[31].f = CAL; code[31].l = 0; code[31].a = 20;
-    code[32].f = LOD; code[32].l = 0; code[ 32].a = 4;
-    code[33].f = LOD; code[33].l = 0; code[ 33].a = 9;
-    code[34].f = OPR; code[34].l = 0; code[ 34].a = 2;
-    code[35].f = STO; code[35].l = 0; code[ 35].a = 4;
-    code[36].f = LOD; code[36].l = 0; code[ 36].a = 3;
-    code[37].f = LIT; code[37].l = 0; code[ 37].a = 2;
-    code[38].f = OPR; code[38].l = 0; code[ 38].a = 3;
-    code[39].f = STO; code[39].l = 0; code[ 39].a = 8;
-    code[40].f = CAL; code[40].l = 0; code[40].a = 20; 
-    code[41].f = LOD; code[41].l = 0; code[ 41].a = 4;
-    code[42].f = LOD; code[42].l = 0; code[ 42].a = 9;
-    code[43].f = OPR; code[43].l = 0; code[ 43].a = 2;
-    code[44].f = STO; code[44].l = 0; code[ 44].a = 4;
-    code[45].f = OPR; code[45].l = 0; code[ 45].a = 0;
-
-    code[46].f = LIT; code[46].l = 0; code[ 46].a = 1;
-    code[47].f = STO; code[47].l = 0; code[ 47].a = 4;
-    code[48].f = OPR; code[48].l = 0; code[ 48].a = 0;
-        
-
-   
     
 
 
