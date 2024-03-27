@@ -236,9 +236,9 @@ int main()
     code[ 7].f = LOD; code[ 7].l = 0; code[ 7].a =  3;
     // carregando o contador para o topo da pilha
     code[ 8].f = LOD; code[ 8].l = 0; code[ 8].a =  4; 
-    //verificando se os dois sao iguais 
+    //verificando se o top e < que top + 1 
     code[ 9].f = OPR; code[ 9].l = 0; code[ 9].a = 10; 
-    //se forem iguais pula para code[20], se nao continua
+    //se for pula para code[20]
     code[10].f = JPC; code[10].l = 0; code[10].a = 20; 
     //carrega resultado na posicao s[5]
     code[11].f = LOD; code[11].l = 0; code[11].a =  5; 
